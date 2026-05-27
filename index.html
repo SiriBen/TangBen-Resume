@@ -10,7 +10,16 @@
 <body>
   <a class="skip-link" href="#about" data-i18n="skipLink">跳到主要内容</a>
   <!-- 启动加载动画 / Splash Loader -->
-  <div class="page-loader" id="pageLoader" aria-label="Loading"><div class="loader-orbit"><span></span><span></span><span></span></div><p data-i18n="loaderText">正在加载作品集</p></div>
+  <div class="page-loader" id="pageLoader" aria-label="Loading">
+    <div class="loader-stage">
+      <div class="loader-mark" aria-hidden="true">
+        <span>T</span><span>B</span>
+      </div>
+      <div class="loader-scan" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p data-i18n="loaderText">正在加载作品集</p>
+      <div class="loader-progress" aria-hidden="true"><span></span></div>
+    </div>
+  </div>
   <!-- 顶部导航 / Header Navigation -->
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Primary navigation">
